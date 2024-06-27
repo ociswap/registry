@@ -24,4 +24,4 @@ default = []
 test = []
 
 [lib]
-crate-type = ["cdylib", "lib"]
+crate-type = ["lib"]
