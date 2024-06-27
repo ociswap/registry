@@ -17,11 +17,7 @@ impl TestHelperExecution for RegistryTestHelper {
 
 impl RegistryTestHelper {
     pub fn new() -> Self {
-        let packages: HashMap<&str, &str> = vec![
-            ("registry", ".")
-        ]
-        .into_iter()
-        .collect();
+        let packages: HashMap<&str, &str> = vec![("registry", ".")].into_iter().collect();
         println!("{:?}", packages);
         Self::new_with_packages(packages)
     }

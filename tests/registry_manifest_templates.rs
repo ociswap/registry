@@ -3,9 +3,9 @@ mod registry_manifest_templates {
     use std::mem;
 
     // INSTANTIATE
+    use registry_test_helper::*;
     use scrypto::prelude::*;
     use scrypto_unit::dump_manifest_to_file_system;
-    use registry_test_helper::*;
 
     #[test]
     fn test_dump_instantiate() {
