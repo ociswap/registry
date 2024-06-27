@@ -3,9 +3,6 @@ name = "registry_test_helper"
 version = "0.1.1"
 edition = "2021"
 
-[net]
-git-fetch-with-cli = true
-
 [dependencies]
 sbor = { git = "https://github.com/radixdlt/radixdlt-scrypto", tag = "v1.1.1" }
 scrypto = { git = "https://github.com/radixdlt/radixdlt-scrypto", tag = "v1.1.1" }
