@@ -167,17 +167,6 @@ dependencies = [
 
 [[package]]
 name = "common"
-version = "1.0.3"
-source = "git+ssh://git@github.com/ociswap/pools-common.git#a35604154f150a6d20291dfe43b3242f2df38b9e"
-dependencies = [
- "pretty_assertions",
- "sbor",
- "scrypto",
- "scrypto_math",
-]
-
-[[package]]
-name = "common"
 version = "1.0.5"
 source = "git+https://github.com/ociswap/pools-common#358255af17b8b002435b390cbc25d67cfa347c96"
 dependencies = [
@@ -1008,7 +997,7 @@ checksum = "dbb5fb1acd8a1a18b3dd5be62d25485eb770e05afb408a9627d14d451bae12da"
 name = "registry"
 version = "1.0.0"
 dependencies = [
- "common 1.0.5",
+ "common",
  "pretty_assertions",
  "radix-engine",
  "radix-engine-interface",
@@ -1026,7 +1015,7 @@ dependencies = [
 name = "registry_test_helper"
 version = "0.1.1"
 dependencies = [
- "common 1.0.3",
+ "common",
  "lazy_static",
  "pretty_assertions",
  "radix-engine",
@@ -1226,18 +1215,6 @@ dependencies = [
  "transaction",
  "utils",
  "wabt",
-]
-
-[[package]]
-name = "scrypto_math"
-version = "0.4.0"
-source = "git+https://github.com/ociswap/scrypto-math?tag=v0.4.0#9fb96046266e80c9c0df129a96173837e8ff9fd9"
-dependencies = [
- "num-traits",
- "pretty_assertions",
- "radix-engine-common",
- "radix-engine-macros",
- "utils",
 ]
 
 [[package]]
