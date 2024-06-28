@@ -171,15 +171,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "common"
-version = "1.0.5"
-source = "git+https://github.com/ociswap/pools-common#358255af17b8b002435b390cbc25d67cfa347c96"
-dependencies = [
- "sbor",
- "scrypto",
-]
-
-[[package]]
 name = "const-sha1"
 version = "0.2.0"
 source = "git+https://github.com/radixdlt/const-sha1#5e9ae2a99e9c76e85aa67f42e4b62e7f7ce8dad4"
@@ -963,7 +954,7 @@ checksum = "dbb5fb1acd8a1a18b3dd5be62d25485eb770e05afb408a9627d14d451bae12da"
 name = "registry"
 version = "1.0.0"
 dependencies = [
- "common 1.0.5 (git+https://github.com/ociswap/pools-common?tag=v1.0.5)",
+ "common",
  "pretty_assertions",
  "radix-engine",
  "radix-engine-interface",
@@ -981,7 +972,6 @@ dependencies = [
 name = "registry_test_helper"
 version = "0.1.1"
 dependencies = [
- "common 1.0.5 (git+https://github.com/ociswap/pools-common)",
  "lazy_static",
  "pretty_assertions",
  "radix-engine",
