@@ -5,7 +5,7 @@ mod registry_manifest_templates {
     // INSTANTIATE
     use registry_test_helper::*;
     use scrypto::prelude::*;
-    use scrypto_unit::dump_manifest_to_file_system;
+    use scrypto_test::utils::dump_manifest_to_file_system;
 
     #[test]
     fn test_dump_instantiate() {
