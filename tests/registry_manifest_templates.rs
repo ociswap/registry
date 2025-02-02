@@ -17,9 +17,8 @@ mod registry_manifest_templates {
             20 as u64,
         );
         let manifest_builder =
-            mem::take(&mut helper.env.manifest_builder).deposit_batch(helper.env.account);
+            mem::take(&mut helper.env.manifest_builder).deposit_entire_worktop(helper.env.account);
         dump_manifest_to_file_system(
-            manifest_builder.object_names(),
             &manifest_builder.build(),
             "./transaction-manifest",
             Some("instantiate"),
